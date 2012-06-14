@@ -189,7 +189,7 @@ $(document).ready( function() {
 		over: function(e){
 			var b, h, o, f, m = $(this).find('.wp-submenu'), menutop, wintop, maxtop;
 
-			if ( !$(document.body).hasClass('folded') && $(this).hasClass('wp-menu-open') )
+			if ( m.is(':visible') )
 				return;
 
 			menutop = $(this).offset().top;

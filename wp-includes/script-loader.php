@@ -267,9 +267,7 @@ function wp_default_scripts( &$scripts ) {
 
 	$scripts->add( 'user-profile', "/wp-admin/js/user-profile$suffix.js", array( 'jquery', 'password-strength-meter' ), false, 1 );
 
-	$scripts->add( 'user-search', "/wp-admin/js/user-search$suffix.js", array( 'jquery-ui-autocomplete' ), false, 1 );
-
-	$scripts->add( 'site-search', "/wp-admin/js/site-search$suffix.js", array( 'jquery-ui-autocomplete' ), false, 1 );
+	$scripts->add( 'user-suggest', "/wp-admin/js/user-suggest$suffix.js", array( 'jquery-ui-autocomplete' ), false, 1 );
 
 	$scripts->add( 'admin-bar', "/wp-includes/js/admin-bar$suffix.js", array(), false, 1 );
 
@@ -307,6 +305,7 @@ function wp_default_scripts( &$scripts ) {
 		'saved'     => __( 'Saved' ),
 		'cancel'    => __( 'Cancel' ),
 		'close'     => __( 'Close' ),
+		'cheatin'   => __( 'Cheatin&#8217; uh?' ),
 	) );
 
 	if ( is_admin() ) {
